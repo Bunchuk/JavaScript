@@ -1,0 +1,110 @@
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+header{
+    width: 100%;
+	background-color: #866767;
+    margin: 0;
+    border-bottom: solid 4px #530000;
+    border-radius: 15px;
+}
+.menu-top{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.content{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(master-head.png);
+    border-radius: 15px;
+}
+.left-menu{
+  background-color: #866767;
+  padding: 5px;
+  list-style:none;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  width: 230px;
+  height: 100%;
+  top: 100;
+  left: -240px;
+  transition: left 0.5s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+    border-radius: 15px;
+}
+.left-menu-button, .menu-top-button{
+    display: block;
+	width: 150px;
+	height: 30px;
+	border: none;
+	border-radius: 15px;
+	margin: 5px;
+	background: linear-gradient(to top left, #ffffff, #bf7115);
+	font-weight: 700;
+	cursor: pointer;
+}
+.left-menu-button:hover, .menu-top-button:hover, .btn-menu:hover {
+  background: linear-gradient(to top left, #ffffff, #bf1515);
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  color: #fff;
+  background: linear-gradient(to top left, #ffffff, #bf7115);
+  padding: 7px;
+  position: fixed;
+  top: 110px;
+  left: 10px;
+  cursor: pointer;
+  transition: left 0.5s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  border-radius: 50%;
+ }
+.btn-menu span {
+  display: block;
+  height: 4px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  position: relative;
+  border-radius: 10px;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 190px;
+}
+.hidden-menu-ticker:checked ~ .left-menu {
+    left: 0px;
+    display: block;
+}
+.right{
+    margin-left: 20px;
+}
+.bottom-menu{
+    display: flex;
+    justify-content: center;
+}
+.bottom-menu li {
+    padding: 5px;
+    border: solid 1px gray;
+    width: 120px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.menu-top img{
+    border-radius: 10px;
+}
